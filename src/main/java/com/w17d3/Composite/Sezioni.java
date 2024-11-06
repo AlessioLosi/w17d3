@@ -3,7 +3,7 @@ package com.w17d3.Composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sezioni {
+public class Sezioni implements metodi {
     private List<Sezioni> sottosezioni;
     private List<Pagine> pagineSezione;
 
@@ -37,11 +37,22 @@ public class Sezioni {
         return pagineSezione;
     }
 
+
     @Override
     public String toString() {
         return "Sezioni{" +
                 "sottosezioni=" + sottosezioni +
                 ", pagineSezione=" + pagineSezione +
                 '}';
+    }
+
+    @Override
+    public void stampa() {
+        
+    }
+
+    @Override
+    public int getNumeroPagine() {
+        return 0;
     }
 }

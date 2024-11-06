@@ -3,7 +3,7 @@ package com.w17d3.Composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Libro {
+public class Libro implements metodi {
     private String titolo;
     private double prezzo;
     private List<Sezioni> sezioni;
@@ -56,5 +56,15 @@ public class Libro {
                 ", sezioni=" + sezioni +
                 ", autori=" + autori +
                 '}';
+    }
+
+    @Override
+    public void stampa() {
+
+    }
+
+    @Override
+    public int getNumeroPagine() {
+        return 0;
     }
 }
